@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <header class="position-fixed">
+      <nav class="navbar navbar-expand-lg navbar">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand bg-primary d-flex pt-3 pb-3"
+            href="#"
+            style="width: 232px"
+          >
+            <div class="logo rounded-circle ms-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                style="fill: rgba(255, 255, 255, 1)"
+                class="svg1"
+              >
+                <path
+                  d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm5 2h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm1-6h4v4h-4V5zM3 20a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6zm2-5h4v4H5v-4zm8 5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6zm2-5h4v4h-4v-4z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-light ps-3"> <strong>Grid</strong>Works </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  ><img src="./assets/user-icon.png" alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(134, 154, 184, 1)"
+                  >
+                    <path
+                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(134, 154, 184, 1)"
+                  >
+                    <path
+                      d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(134, 154, 184, 1)"
+                  >
+                    <path
+                      d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                    ></path>
+                    <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                    <path
+                      d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <img src="./assets/image2.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="d1 position-relative me-4">
+                <input
+                  class="form-control me-2 bg-body-secondary ps-5"
+                  type="search"
+                  placeholder="Eamil Address"
+                  aria-label="Search"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(134, 154, 184, 1)"
+                  class="position-absolute top-0 mt-2 ms-2"
+                >
+                  <path
+                    d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+                  ></path>
+                </svg>
+              </div>
+              <button
+                class="btn border-primary text-primary"
+                style="width: 200px"
+                type="submit"
+              >
+                Stay Updated
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="row container-fluid images w-100">
+        <div class="col-2 col-lg-2 position-fixed sidebar">
+          <div
+            class="overflow-y-scroll container"
+            style="height: 90vh; width: 230px"
+          >
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"
+                  ></path>
+                </svg>
+                <p>Home</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path d="m10 17 6-5-6-5z"></path>
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                  ></path>
+                </svg>
+                <p>Services</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"
+                  ></path>
+                </svg>
+                <p>Contacts</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z"
+                  ></path>
+                  <path
+                    d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z"
+                  ></path>
+                </svg>
+                <p>Componets</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M5.122 21c.378.378.88.586 1.414.586S7.572 21.378 7.95 21l4.336-4.336a7.495 7.495 0 0 0 2.217.333 7.446 7.446 0 0 0 5.302-2.195 7.484 7.484 0 0 0 1.632-8.158l-.57-1.388-4.244 4.243-2.121-2.122 4.243-4.243-1.389-.571A7.478 7.478 0 0 0 14.499 2c-2.003 0-3.886.78-5.301 2.196a7.479 7.479 0 0 0-1.862 7.518L3 16.05a2.001 2.001 0 0 0 0 2.828L5.122 21zm4.548-8.791-.254-.616a5.486 5.486 0 0 1 1.196-5.983 5.46 5.46 0 0 1 4.413-1.585l-3.353 3.353 4.949 4.95 3.355-3.355a5.49 5.49 0 0 1-1.587 4.416c-1.55 1.55-3.964 2.027-5.984 1.196l-.615-.255-5.254 5.256h.001l-.001 1v-1l-2.122-2.122 5.256-5.255z"
+                  ></path>
+                </svg>
+                <p>Utilities</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M19 3h-2.25a1 1 0 0 0-1-1h-7.5a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 17H5V5h2v2h10V5h2v15z"
+                  ></path>
+                </svg>
+                <p>Documents</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M16.5 8c0 1.5-.5 3.5-2.9 4.3.7-1.7.8-3.4.3-5-.7-2.1-3-3.7-4.6-4.6-.4-.3-1.1.1-1 .7 0 1.1-.3 2.7-2 4.4C4.1 10 3 12.3 3 14.5 3 17.4 5 21 9 21c-4-4-1-7.5-1-7.5.8 5.9 5 7.5 7 7.5 1.7 0 5-1.2 5-6.4 0-3.1-1.3-5.5-2.4-6.9-.3-.5-1-.2-1.1.3"
+                  ></path>
+                </svg>
+                <p>Features</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"
+                  ></path>
+                </svg>
+                <p>Cart</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M4 21a1 1 0 0 0 .24 0l4-1a1 1 0 0 0 .47-.26L21 7.41a2 2 0 0 0 0-2.82L19.42 3a2 2 0 0 0-2.83 0L4.3 15.29a1.06 1.06 0 0 0-.27.47l-1 4A1 1 0 0 0 3.76 21 1 1 0 0 0 4 21zM18 4.41 19.59 6 18 7.59 16.42 6zM5.91 16.51 15 7.41 16.59 9l-9.1 9.1-2.11.52z"
+                  ></path>
+                </svg>
+                <p>Blog</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm2.113 13H9.986l-1.723-3.094L10.202 9h3.736l1.871 3.062L14.113 15zM4 12c0-.953.186-1.87.508-2.727L7.696 15H4.61A7.757 7.757 0 0 1 4 12zm12.283-3h3.106A7.74 7.74 0 0 1 20 12c0 .844-.143 1.66-.397 2.432L16.283 9zm1.905-2h-6.653l1.905-2.857c1.886.359 3.562 1.403 4.748 2.857zm-7.095-2.941L9.132 7H9v.197L7.17 9.942 5.65 7.214c1.3-1.703 3.249-2.895 5.443-3.155zM5.812 17h7.147l-1.709 2.961C9.084 19.748 7.141 18.63 5.812 17zm7.828 2.82 3.357-5.815 1.544 2.526c-1.154 1.642-2.901 2.854-4.901 3.289z"
+                  ></path>
+                </svg>
+                <p>About</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M19 2.01H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.998 5 19.815 5 19.01c0-.101.009-.191.024-.273.112-.575.583-.717.987-.727H20c.018 0 .031-.009.049-.01H21V4.01c0-1.103-.897-2-2-2zm0 14H5v-11c0-.806.55-.988 1-1h7v7l2-1 2 1v-7h2v12z"
+                  ></path>
+                </svg>
+                <p>Portfolio</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
+                  ></path>
+                  <path
+                    d="M12 11c-2 0-2-.63-2-1s.7-1 2-1 1.39.64 1.4 1h2A3 3 0 0 0 13 7.12V6h-2v1.09C9 7.42 8 8.71 8 10c0 1.12.52 3 4 3 2 0 2 .68 2 1s-.62 1-2 1c-1.84 0-2-.86-2-1H8c0 .92.66 2.55 3 2.92V18h2v-1.08c2-.34 3-1.63 3-2.92 0-1.12-.52-3-4-3z"
+                  ></path>
+                </svg>
+                <p>Pricing</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col box me-2 mb-2 d-flex flex-column align-items-center justify-content-center rounded"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M17 8V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v1h2zm1 4 .002 8H6v-8h12z"
+                  ></path>
+                </svg>
+                <p>Terms</p>
+              </div>
+              <div
+                class="col box mb-2 d-flex flex-column align-items-center justify-content-center rounded me-1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="height: 105px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="svg2"
+                >
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"
+                  ></path>
+                </svg>
+                <p>Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 col-12 container-fluid images home-section">
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid cards">
+              <div
+                class="col-md-4 col-12 card card-blog me-1 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image5.png"
+                    alt=""
+                    style="height: 200px"
+                    class="card-img img-fluid w-100"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Revolutionise Your Workspace With Us At Gridworks
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgb(255, 255, 255)"
+                          >
+                            <path
+                              d="M9 20h6v2H9zm7.906-6.288C17.936 12.506 19 11.259 19 9c0-3.859-3.141-7-7-7S5 5.141 5 9c0 2.285 1.067 3.528 2.101 4.73.358.418.729.851 1.084 1.349.144.206.38.996.591 1.921H8v2h8v-2h-.774c.213-.927.45-1.719.593-1.925.352-.503.726-.94 1.087-1.363zm-2.724.213c-.434.617-.796 2.075-1.006 3.075h-2.351c-.209-1.002-.572-2.463-1.011-3.08a20.502 20.502 0 0 0-1.196-1.492C7.644 11.294 7 10.544 7 9c0-2.757 2.243-5 5-5s5 2.243 5 5c0 1.521-.643 2.274-1.615 3.413-.373.438-.796.933-1.203 1.512z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Reffering Workspace</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-success"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Entrepreneurship</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-1 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image6.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Coworking Spaces Built For Your Start Startups 🤘
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Define Your Vision</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-warning"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Startups Weekly</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image7.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Everything Your Team Could Need, We Have Got It
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                            ></path>
+                            <path
+                              d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Solve Specific Problem</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-light"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Week in Review</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-8 col-12 card card-blog mb-2 me-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image8.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      How to grow and scale your business whithout hiring more
+                      people
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="m12 17 1-2V9.858c1.721-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S8 3.794 8 6c0 1.858 1.279 3.411 3 3.858V15l1 2zM10 6c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2-2-.897-2-2z"
+                            ></path>
+                            <path
+                              d="m16.267 10.563-.533 1.928C18.325 13.207 20 14.584 20 16c0 1.892-3.285 4-8 4s-8-2.108-8-4c0-1.416 1.675-2.793 4.267-3.51l-.533-1.928C4.197 11.54 2 13.623 2 16c0 3.364 4.393 6 10 6s10-2.636 10-6c0-2.377-2.197-4.46-5.733-5.437z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Define Your Space</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-danger"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Creativity</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image8.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      How training my brain to focus helped me to build two
+                      profitable business
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >List Your Business Goals</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-info"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Motivation</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-6 col-12 card card-blog mb-2 me-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image9.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      How to escape competition (and build a business on your
+                      own terms)
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Pick Your Team</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-info"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Personal Development</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image10.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Sell Something Bigger Than Your Otherwise Boring Business
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z"
+                            ></path>
+                            <path d="M8 6h9v2H8z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Coworking Business Model</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-primary"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Life Lessons</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-8 col-12 card card-blog mb-2 me-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image11.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      The unofficial (slightly sarcastic) thesaurus for business
+                      buzzwords.✌️
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                            ></path>
+                            <path
+                              d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Key Resourceds</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-success"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Business</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image12.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Bootstrapping Guide: How to Start a Business with No Money
+                      👌
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                              d="M13 4.069V2h-2v2.069A8.008 8.008 0 0 0 4.069 11H2v2h2.069A8.007 8.007 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Target Audience</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-danger"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Innovation</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-6 col-12 card card-blog mb-2 me-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image13.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      How to make better decisions in life and in in business: a
+                      mini guide
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M7 17a5.007 5.007 0 0 0 4.898-4H14v2h2v-2h2v3h2v-3h1v-2h-9.102A5.007 5.007 0 0 0 7 7c-2.757 0-5 2.243-5 5s2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Key Activities</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-success"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Hard Work</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image14.jpg"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Button colors won't save your business
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
+                            ></path>
+                            <path
+                              d="M12 11c-2 0-2-.63-2-1s.7-1 2-1 1.39.64 1.4 1h2A3 3 0 0 0 13 7.12V6h-2v1.09C9 7.42 8 8.71 8 10c0 1.12.52 3 4 3 2 0 2 .68 2 1s-.62 1-2 1c-1.84 0-2-.86-2-1H8c0 .92.66 2.55 3 2.92V18h2v-1.08c2-.34 3-1.63 3-2.92 0-1.12-.52-3-4-3z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Revenue Streams</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-primary"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Investing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-8 col-12 card card-blog mb-2 me-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image15.jpg"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Slow growth is good for business 🔥
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8a3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4 3.91 3.91 0 0 0-4 4zm6 0a1.91 1.91 0 0 1-2 2 1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2zM4 18a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h2v-1a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5v1h2z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Added Value</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-success"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Blogging</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image12.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Why Business Should Start Focusing on Google's Flutter and
+                      Fuchsia
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M8 12c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4zm0-6c1.178 0 2 .822 2 2s-.822 2-2 2-2-.822-2-2 .822-2 2-2zm1 7H7c-2.757 0-5 2.243-5 5v1h2v-1c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v1h2v-1c0-2.757-2.243-5-5-5zm9.364-10.364L16.95 4.05C18.271 5.373 19 7.131 19 9s-.729 3.627-2.05 4.95l1.414 1.414C20.064 13.663 21 11.403 21 9s-.936-4.663-2.636-6.364z"
+                            ></path>
+                            <path
+                              d="M15.535 5.464 14.121 6.88C14.688 7.445 15 8.198 15 9s-.312 1.555-.879 2.12l1.414 1.416C16.479 11.592 17 10.337 17 9s-.521-2.592-1.465-3.536z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Advertising</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-info"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Freelancing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row container-fluid">
+              <div
+                class="col-md-4 col-12 card card-blog me-1 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="card-img img-fluid">
+                  <img
+                    src="./assets/image17.jpg"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      Mapping a Business Model in 5 Steps
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"
+                            ></path>
+                            <path
+                              d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Customer Segments</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-success"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Development</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-1 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image18.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      You Are The Problem With Your Business
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8a3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4 3.91 3.91 0 0 0-4 4zm6 0a1.91 1.91 0 0 1-2 2 1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2zM4 18a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h2v-1a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5v1h2z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Partnera</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-warning"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Evolution</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-12 card card-blog me-0 mb-2 anm anm1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div>
+                  <img
+                    src="./assets/image19.png"
+                    alt=""
+                    style="height: 200px"
+                    class="w-100 card-img img-fluid"
+                  />
+                  <div
+                    class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between img1"
+                  >
+                    <h5 class="card-title text-white">
+                      How to make Subscription Model Work For Your Business
+                    </h5>
+                    <div
+                      class="d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1)"
+                          >
+                            <path
+                              d="M8 12c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4zm0-6c1.178 0 2 .822 2 2s-.822 2-2 2-2-.822-2-2 .822-2 2-2zm1 7H7c-2.757 0-5 2.243-5 5v1h2v-1c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v1h2v-1c0-2.757-2.243-5-5-5zm9.364-10.364L16.95 4.05C18.271 5.373 19 7.131 19 9s-.729 3.627-2.05 4.95l1.414 1.414C20.064 13.663 21 11.403 21 9s-.936-4.663-2.636-6.364z"
+                            ></path>
+                            <path
+                              d="M15.535 5.464 14.121 6.88C14.688 7.445 15 8.198 15 9s-.312 1.555-.879 2.12l1.414 1.416C16.479 11.592 17 10.337 17 9s-.521-2.592-1.465-3.536z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="text-white mb-0 d-inline-block"
+                          >Marketing Strategies</span
+                        >
+                      </div>
+                      <a
+                        class="badge badge-pill stretched-link ml-2 badge-light"
+                        data-toggle="modal"
+                        href="#modal-card"
+                        >Confidence</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <!-- Modal -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Gridworks</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/image5.png" alt="" style="width: 97%" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- //////bootstrap//// -->
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
